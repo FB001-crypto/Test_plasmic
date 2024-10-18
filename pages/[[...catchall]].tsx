@@ -13,7 +13,7 @@ import { PLASMIC } from "@/plasmic-init";
 
 export default function PlasmicLoaderPage(props: {
   plasmicData?: ComponentRenderData;
-  queryCache?: Record<string, any>;
+  queryCache?: Record<string, unknown>; // 使用 unknown 代替 any
 }) {
   const { plasmicData, queryCache } = props;
   const router = useRouter();
